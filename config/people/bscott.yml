@@ -19,7 +19,6 @@ recipes:
         - applications::nitrousio
         - applications::packer
         - applications::phantomjs
-        - applications::rvm
         - applications::skype
         - applications::tmux
         - applications::virtualbox
@@ -34,6 +33,7 @@ recipes:
         - applications::google-hangouts
         - applications::github_for_mac
         - applications::curl
+        - applications::rvm
 #        - applications::hhvm
         - sudo::default
         - osxdefaults::dock_automatically_hide_and_show_the_dock
@@ -69,6 +69,7 @@ attributes:
                 - nerdtree: https://github.com/scrooloose/nerdtree.git
                 - vimgolang: https://github.com/jnwhiteh/vim-golang
                 - vimfugitive: https://github.com/tpope/vim-fugitive
+                - gocode: https://github.com/nsf/gocode
     git:
         name: Brian L. Scott
         email: brainscott@gmail.com
