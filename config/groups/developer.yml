@@ -13,8 +13,6 @@ recipes:
         - applications::sass
         - applications::siege
         - applications::nodejs
-        - applications::golang
-        - applications::virtualbox
         - applications::ssh_config
         - dotfiles::vim
         - applications::composer
