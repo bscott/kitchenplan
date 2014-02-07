@@ -24,7 +24,7 @@ recipes:
         - applications::rvm
         - applications::skype
         - applications::tmux
-        - applications::virtualboox
+        - applications::virtualbox
         - applications::vmware_fusion
         - applications::adium
         - applications::cord
