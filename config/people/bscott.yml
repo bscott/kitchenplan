@@ -19,7 +19,7 @@ recipes:
         - applications::nitrousio
         - applications::packer
         - applications::phantomjs
-#        - applications::rvm
+        - applications::rvm
         - applications::skype
         - applications::tmux
         - applications::virtualbox
