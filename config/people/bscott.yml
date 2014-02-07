@@ -9,7 +9,6 @@ recipes:
         - applications::1password
         - applications::dropbox
         - applications::evernote
-        - applications::istatmenus4
         - applications::kaleidoscope
         - applications::omnigraffle
         - applications::alfred
