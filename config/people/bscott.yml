@@ -35,7 +35,6 @@ recipes:
         - applications::github_for_mac
         - applications::curl
 #        - applications::hhvm
-        - skylab::default
         - sudo::default
         - applications::vagrant
         - osxdefaults::dock_automatically_hide_and_show_the_dock
