@@ -16,8 +16,6 @@ recipes:
         - applications::totalfinder
         - applications::spotify
         - applications::bartender
-        - applications::evernote
-        - applications::sparrow
 #        - applications::hhvm
         - skylab::default
         - sudo::default
