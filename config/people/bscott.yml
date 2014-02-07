@@ -16,6 +16,19 @@ recipes:
         - applications::totalfinder
         - applications::spotify
         - applications::bartender
+        - applications::hipchat
+        - applications::lastpass
+        - applications::nitrousio
+        - applications::packer
+        - applications::phantomjs
+        - applications::rvm
+        - applications::skype
+        - applications::tmux
+        - applications::virtualboox
+        - applications::vmware_fusion
+        - applications::adium
+        - applications::cord
+        - applications::evernote
 #        - applications::hhvm
         - skylab::default
         - sudo::default

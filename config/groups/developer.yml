@@ -17,9 +17,7 @@ recipes:
         - dotfiles::vim
         - applications::composer
         - applications::postgresql
-        - applications::mysql
-        - applications::apache
-        - applications::php55
+        - applications::mongodb
         - dotfiles::workspace
     mac_os_x:
         - applications::imageoptim
