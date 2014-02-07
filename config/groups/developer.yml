@@ -15,7 +15,6 @@ recipes:
         - applications::nodejs
         - applications::ssh_config
         - dotfiles::vim
-        - applications::composer
         - applications::postgresql
         - dotfiles::workspace
     mac_os_x:
@@ -23,7 +22,6 @@ recipes:
         - applications::imagealpha
         - applications::svgo
         - applications::sublime_text_3
-        - applications::phpstorm
         - applications::watch
         - applications::gnu-tar
         - applications::sequelpro

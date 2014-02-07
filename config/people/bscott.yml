@@ -29,6 +29,14 @@ recipes:
         - applications::adium
         - applications::cord
         - applications::evernote
+        - applications::transmit
+        - applications::sizeup
+        - applications::iterm2
+        - applications::hub
+        - applications::grunt-cli
+        - applications::google-hangouts
+        - applications::github_for_mac
+        - applications::curl
 #        - applications::hhvm
         - skylab::default
         - sudo::default
