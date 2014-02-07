@@ -10,7 +10,6 @@ recipes:
         - applications::dropbox
         - applications::evernote
         - applications::kaleidoscope
-        - applications::omnigraffle
         - applications::alfred
         - applications::totalfinder
         - applications::spotify
@@ -24,7 +23,6 @@ recipes:
         - applications::skype
         - applications::tmux
         - applications::virtualbox
-        - applications::vmware_fusion
         - applications::adium
         - applications::cord
         - applications::evernote
