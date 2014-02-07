@@ -68,6 +68,7 @@ attributes:
                 - syntastic: git://github.com/scrooloose/syntastic.git
                 - nerdtree: https://github.com/scrooloose/nerdtree.git
                 - vimgolang: https://github.com/jnwhiteh/vim-golang
+                - vimfugitive: https://github.com/tpope/vim-fugitive
     git:
         name: Brian L. Scott
         email: brainscott@gmail.com
