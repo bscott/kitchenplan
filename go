@@ -78,9 +78,9 @@ end
 
 def sudo *args
   args = if args.length > 1
-    args.unshift "/usr/bin/sudo"
+    args.unshift "source ~/.rvm/scripts/rvm && rvm use 1.9.3 &&"
   else
-    "/usr/bin/sudo #{args.first}"
+    "source ~/.rvm/scripts/rvm && rvm use 1.9.3 && #{args.first}"
   end
   ohai *args
   system *args
