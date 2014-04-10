@@ -1,12 +1,12 @@
 recipes:
     global:
-	- applications::create_var_chef_cache
-	- applications::google-chrome
-	- applications::firefox
-	- kono_workstation::java
-	- applications::vlc
-	- applications::flash
-	- applications::adobe_reader
+      - applications::create_var_chef_cache
+	    - applications::google-chrome
+	    - applications::firefox
+	    - kono_workstation::java
+	    - applications::vlc
+	    - applications::flash
+	    - applications::adobe_reader
     mac_os_x:
         - osxdefaults::add_note_to_loginscreen
         - osxdefaults::disable_auto-correct
