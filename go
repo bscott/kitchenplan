@@ -11,7 +11,7 @@
 #
 # execution can be customized by the following environmental variables:
 # KITCHENPLAN_PATH - kitchenplan installation path (defaults to /opt/kitchenplan)
-# KITCHENPLAN_REPO - repository to use for recipes/cookbooks (defaults to https://github.com/kitchenplan/kitchenplan.git)
+# KITCHENPLAN_REPO - repository to use for recipes/cookbooks (defaults to https://github.com/kitchenplan/kitchenplan)
 
 KITCHENPLAN_PATH = ENV.fetch("KITCHENPLAN_PATH", "/opt/kitchenplan")
 KITCHENPLAN_REPO = ENV.fetch("KITCHENPLAN_REPO", "https://github.com/kitchenplan/kitchenplan.git")
@@ -23,20 +23,20 @@ OptionParser.new do |opts|
 
     options[:interaction] = true
     opts.on("--[no-]interaction", "Run the go script without user interaction") do |interaction|
-        options[:interaction] = interaction
+	options[:interaction] = interaction
     end
 
     opts.separator ""
     opts.separator "Common options:"
 
     opts.on_tail("-h", "--help", "Show this message") do
-        puts opts
-        exit
+	puts opts
+	exit
     end
 
     opts.on_tail("--version", "Show version") do
-        puts "1.0.0"
-        exit
+	puts "1.0.0"
+	exit
     end
 
 end.parse!
@@ -117,7 +117,10 @@ end
 
 ######################################################
 
-abort "OSX too old, you need at least Mountain Lion" if macos_version < "10.8"
+ohai "Kitchenplan is only tested on 10.8 and 10.9, proceed on your own risk." if macos_version < "10.8"
+wait_for_user if macos_version < "10.8"
+#abort "OSX too old, you need at least Mountain Lion" if macos_version < "10.8"
+
 abort "Don't run this as root!" if Process.uid == 0
 abort <<-EOABORT unless `groups`.split.include? "admin"
 This script requires the user #{ENV['USER']} to be an Administrator.
@@ -156,10 +159,10 @@ if File.directory?(KITCHENPLAN_PATH)
   normaldo "git pull"
 else
   ohai "Setting up the Kitchenplan installation..."
-  sudo "mkdir -p #{KITCHENPLAN_PATH}"
-  sudo "chown -R #{ENV["USER"]} #{KITCHENPLAN_PATH}"
+  sudo "mkdir -p /opt"
+  sudo "chown -R #{ENV["USER"]} /opt"
   normaldo "git clone -q #{KITCHENPLAN_REPO} #{KITCHENPLAN_PATH}"
 end
 
 Dir.chdir KITCHENPLAN_PATH if options[:interaction]
-normaldo "./kitchenplan #{options[:interaction] ? '': '-d'}"
+normaldo "./kitchenplan"
